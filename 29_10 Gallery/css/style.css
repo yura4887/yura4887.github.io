@@ -35,3 +35,6 @@ main {
 	background-position: center;
 	background-size: cover;
 }
+footer, header {
+	padding: 15px;
+}
