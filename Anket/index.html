@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Championship</title>
+	<link rel="" href="fonts/font1.ttf">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/ico1.png">
+</head>
+<body>
+	<form action="" autocomplete="on">
+		<h1>Application form for the championship</h1>
+		<p><i>Fields marked with <em>*</em> are required to be filled in.</i></p>
+
+		<fieldset>
+			<legend>Kontact information</legend>
+			
+			<label for="surname">Surname<em>*</em></label>
+			<input type="text" name="" id="surname" required><br>
+			
+			<label for="name">Name<em>*</em></label>
+			<input type="text" name="" id="name" required><br>
+
+			<label for="phone">Phone number</label>
+			<input type="text" name="" id="phone" placeholder="+7 978 *** ** **"><br>
+
+			<label for="email">Mail<em>*</em></label>
+			<input type="email" name="" id="email" placeholder="*****@mail.com" required><br>
+		</fieldset>
+		<fieldset>
+			<legend>Personal information</legend>
+			
+			<label for="date">Date of birth<em>*</em></label>
+			<input type="date" name="" id="date" required min="1890-01-12" max="2009-01-01"><br>
+
+			<label for="">Gender</label>
+			<label for="gender1"><input type="radio" id="gender1" name="gender">Male</label>
+			<label for="gender2"><input type="radio" id="gender2" name="gender">Female</label>
+			<label for="gender3"><input type="radio" id="gender3" name="gender" checked>Not answer</label><br>
+
+			<label for="city">Your city</label>
+			<select name="" id="city">
+				<option value="empty" disabled selected>Not answer</option>
+				<option value="ruc">Moskov</option>
+				<option value="swamp">Saint-Peterburg</option>
+				<option value="eben">Ebengrad</option>
+				<option value="la">Los-Angeles</option>
+				<option value="usc">Washington</option>
+				<option value="jac">Tokyo</option>
+			</select><br>
+
+			<label for="about">Tell about yourself</label>
+			<textarea id="about" placeholder="I like..."></textarea><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Game expierince</legend>
+
+            <label for="exp">Game level</label>
+            <input type="range" min="0" max="100"><br>
+
+			<label for="games">Take games, when you play.</label>
+			<label for="game1"><input type="checkbox" id="game1" name="game">Counter Strike (1.*/Source/GO)</label>
+			<label for="game2"><input type="checkbox" id="game2" name="game">Warcraft III<br>(DOTA 1)</label>
+			<label for="game3"><input type="checkbox" id="game3" name="game">PUBG</label>
+			<label for="game4"><input type="checkbox" id="game4" name="game">Unturned</label>
+			<label for="game5"><input type="checkbox" id="game5" name="game">DayZ (ARMA 3)</label>
+			<label for="game6"><input type="checkbox" id="game6" name="game">PayDay 2<br>(The Heist)</label>
+			<label for="game7"><input type="checkbox" id="game7" name="game">DooM multiplayer</label>
+			<label for="game8"><input type="checkbox" id="game8" name="game">Fistful Of Frags</label>
+			<label for="game9"><input type="checkbox" id="game9" name="game">Left 4 Dead (1/2)</label>
+			<label for="game10"><input type="checkbox" id="game10" name="game">Rainbow six: Siege</label>
+			<label for="game11"><input type="checkbox" id="game11" name="game">Other</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Additionally</legend>
+
+			<label for="photo">Profile Photo<em>*</em></label>
+			<input type="file" id="photo" accept="image/*" required><br>
+
+			<label for="color">Pick color for profile Cover</label>
+			<input type="color" id="color"><br>
+
+			<label for="time">Comfort time for start championship</label>
+			<input type="time"><br>
+		</fieldset>
+		<input type="submit" value="Send!">
+	</form>
+</body>
+</html>
