@@ -1,0 +1,26 @@
+header {
+	text-align: center;
+}
+
+body {
+	background: lightgray;
+}
+
+th {
+	background-color: rgb(15, 95, 40);
+	border: 3px black solid;
+	color: rgb(0,195,7)
+}
+
+td {
+	background: rgb(246,246,246);
+	background: linear-gradient(140deg, rgba(246,246,246,1) 75%, rgba(116,116,116,1) 100%); 
+	color: black;
+	border: 2px black solid
+}
+
+table {
+	border: 3px black solid;
+	border-collapse: collapse;
+	width: 100%;
+}

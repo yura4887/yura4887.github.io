@@ -1,0 +1,39 @@
+th {
+	background: lightgray;
+    border: 2px black solid;
+}
+td {
+	background: rgb(200,200,210);
+	background: linear-gradient(140deg, rgba(246,246,246,1) 75%, rgba(116,116,116,1) 100%);
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;
+}
+main {
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+    box-sizing: border-box;
+}
+.tabe {
+	text-align: center;	
+}
+body {
+background: aliceblue;
+}
+
+table {
+	border: 2px black solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td:nth-child(1) {
+	font-weight: bold;
+}
+header {
+	text-align: center;
+}
+[td~="na_palme.us"] {
+	color: darkgreen;
+}

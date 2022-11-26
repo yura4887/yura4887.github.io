@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/ico1.png">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h2><a href="flex.html" class="lef">🡄</a> Position <a href="form.html" class="rig">🡆</a></h2>
+	</header>
+	<main>
+		<h2>position: static (standart)</h2>
+		<p>Staticheskoe pozicionirovanie, ispolzuetsia kak znachenie po umolchaniu.</p>
+		<div style="background: #fae; width: 500px;">
+			Bez pozicionirivania ("position:static").
+			<h3 style="background: #aef; margin: 0;">Text</h3>
+			<div>Another text...<br>... Two text lines</div>
+        </div>
+
+		<h2>position: relative</h2>
+		<p>Otnositelnoe pozicionirovanie sdvigaet element otnositelno ego obichnogo polozhenia. Dla togo shtobi sdvinut element, neobhodimo zadat svoistvo <b>position: relative</b> i volspolzovatsia koordinatami <b>left/right/top/bottom</b></p>
+		<div style="background: #fae; width: 500px;">
+			Text sdvinut na 10px vniz i na 5px vpravo.
+			<h3 style="background: #aef; margin: 0; position: relative; top: 10px; left: 5px;">Text</h3>
+			<div>Another text...<br>... Second text lines</div>
+		</div>
+		<h2>position: absolute</h2>
+		<ol>
+			<li>Element ischezaet s togo mesta, gde on dolzhen bit i pozicionipuetsia zanovo. Ostalnie elementi, raspologaiutsia tak, kak-budto etogo elementa nikogda i ne bilo.</li>
+			<li>Koordinati left/right/top/bottom otscitivaiutsia ot blizhaishego pozicionionirovannogo roditelia (roditelia s pozicionirovaniem otlichnim ot static). Esli takogo roditelia net - to otnositelno documenta.</li>
+			<li>Shirina elementa ustanavlivaetsia po soderzhimomu.</li>
+			<li>Element poluchaet <b>display: block</b></li>
+		</ol>
+		<div style="background: #fae; width: 500px; position: relative;">
+			Text v pravom-verhnem uglu pink elementa.
+			<h3 style="background: #aef; margin: 0; position: absolute; top: 0; right: 0;">Text</h3>
+			<div>Another text...<br>... Second text lines</div>
+		</div>
+		<h2>position: fixed</h2>
+		<p>Pozicioniruet obiekti tak zhe, kak i absolute, no otnositelno okna.</p>
+		<div style="background: #fae; width: 500px;">
+			Text pozicioniruetsia otnositelno okna.
+			<h3 style="background: #aef; margin: 0; position: fixed; right: 0; top: 0;">Text</h3>
+			<div>Another text...<br>... Second text lines</div>
+		</div>
+	</main>
+</body>
+</html>

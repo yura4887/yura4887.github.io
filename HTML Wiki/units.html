@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fiwe</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/ico1.png">
+	<style>
+		ol {
+			font-size: 1.5em;
+		}
+		ul {
+			font-size: 1.5rem;
+		}
+		body {
+			color: rgb(10, 10, 10);
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<h2><a href="humia.html" class="lef">🡄</a> Px, % and OTHER<a href="gaps.html" class="rig">🡆</a></h2>
+    </header>
+    
+    <main>
+        <ol style="font-size: 1em;">
+        	<li>
+        		<h2>Pixels: px</h2>
+        		<p>Osnovnaia i okonchatelnaia edenica izmerenia. Vse znachenia brauzera v itoge pereschitivaet v pixeli </p>
+        	</li>
+        	<li>
+        		<h2>Procents: %</h2>
+        		<p>Procenti vichisllaiutsia ot takogo szhe svoistva u roditilskogo elementa. Krome sleduiushih cluchaev:</p>
+        		<ul>
+        			<li>
+        				<b>margin-left, (margin-right, i t.d.)</b>
+        				<p>Procent beretsia ot SHIRINI poditelskogo blocka, a ne ot ego margin-chototam</p>
+        			</li>
+        			<li>
+        				<b>line-height (visota stroki)</b>
+        				<p>Procent berietsia ot TEKUSHEGO RAZMERA SHRIFTA, a ne ot line-heght roditelia</p>
+        			</li>
+        			<li>
+        				<b>width/heght (pri posotion: fixed;)</b>
+        				<p>Procent berietsia ot shirini/visoti okna, a ne ot shirini/visoti roditelia</p>
+        			</li>
+        		</ul style=": 1em;">
+        	</li>
+        	<li>
+        		<h2>Otnositelno shrifta: em</h2>
+        		<p>1em - eto tekushi razmer shrifta. T.e. 2em - v x2 bolshe tekushego, a 0.5em v x2 menshe tekushego.</p>
+        		<div style="font-size: 10px;">
+        			Tekushi razmer shrifta
+        			<div style="font-size: 1.6em;">
+        				Pervi tekst - razmer shrifta raven = Tekushi shrift *1.6em = 10px * 1.6 = 16px
+        				<div style="font-size: 2em;">
+        					Vtoroi tekst - razmer shrifta = 16px * 2 = 32px
+        				</div>
+        			</div>
+        		</div>
+
+        		<ol>
+        			<li>123
+        				<ol>
+        					<li>234
+        						<ol>
+        							<li>341
+        								<ol>
+        									<li>412</li>
+        								</ol>
+        							</li>
+        						</ol>
+        					</li>
+        				</ol>
+        			</li>
+        		</ol>
+        	</li>
+        	<li>
+        		<h2>Smes px i em: rem</h2>
+        		<p>Zadaiet razmer shrifta otnositelno razmera shrifta tega html</p>
+        		<ul>
+        			<li>123
+        				<ul>
+        					<li>234
+        						<ul>
+        							<li>341
+        								<ul>
+        									<li>412</li>
+        								</ul>
+        							</li>
+        						</ul>
+        					</li>
+        				</ul>
+        			</li>
+        		</ul>
+        	</li>
+        	<li>
+        		<h2>Otnositelno okna: vw, vh, vmin, vmax.</h2>
+        		<ul style="font-size: 1rem;">
+        			<li><b>vw</b> - 1% ot shirini ekrana</li>
+        			<li><b>vh</b> - 1% ot visoti ekrana</li>
+        			<li><b>vmin</b> - naimenshiee iz (vw, vh)</li>
+        			<li><b>vmax</b> - naibolshee iz (vw, nh)</li>
+        		</ul>
+        	</li>
+        </ol>
+    </main>
+
+<footer>
+	<p align="center">Yura4887</p>
+</footer>
+
+</body>
+</html>

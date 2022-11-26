@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fuck ing  play</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/ico1.png">
+	<style></style>
+</head>
+<body>
+	<header>
+		<h2><a href="gaps.html" class="lef">🡄</a> DisPlay <a href="flex.html" class="rig">🡆</a></h2>
+	</header>
+	
+	<main>
+	   <h2>Znachenie 'none'</h2>
+	   <p>Samoe prostoe znachenie-element ne pokazivaetsia, kak budto ego i net.</p>
+	   <div style="border: 1px solid black;"> Nevidimiy 'div' ( <div style="display: none;">nichego</div> ) stoit vnutri skobok</div>
+
+	   <h2>Znachenie 'block'</h2>
+	   <ul>
+	   	<li>Blochnie elementi raspologaiutsia odin nad drudim, vertokalno.</li>
+	   	<li>Block stremitsia rashiritsia na vsiu dostupnuiu shirinu.</li>
+	   	<li>Takoe znachenie svoistva 'display' nekotorie elementi imeiut po umolchaniiu: <b>div, h1-h6, p.</b></li>
+	   </ul>
+	   <div style="border: 1px solid black;">
+	    <div style="border: 1px solid blue;">First</div>
+	    <div style="border: 1px solid red; width: 50%;">Second</div>
+	   </div>
+
+	   <h2>Znachenie 'inline'</h2>
+	   <ul>
+	   	<li>Elementi raspologaiutsia na toi she stroke, posledovatelno.</li>
+	   	<li>Shirina i visota elementa opredeliaiutsia po soderzimomu.</li>
+	   	<li>Inlinovie elementi po umolchaniu: <b>span, a, b.</b></li>
+	   </ul>
+	   <span style="border: 1px solid black;">
+	   	<span style="border: 1px solid blue;">Width</span>
+	   	<a style="border: 1px solid red; width: 1300px;">ignoring</a>
+	   </span>
+	
+       <h2>Znachenie 'inline-block'</h2>
+       <ul>
+       	<li>Raaspologaiutsia v stroke drug za drugom.</li>
+       	<li>Razmer ustanavlivaetsia po soderzimomu</li>
+       	<li>Rabotaiut svoistva <b>width/height</b></li>
+       </ul>
+       <style>
+       	#ib {
+       		display: inline-block;
+       		list-style: none;
+       		border: 1px solid red;
+       	}
+       </style>
+       <div style="border: 1px solid balck;">
+       	 <span id="ib" style="width: 100px; height: 60px;">Inline block 100x60px</span>
+       	 <span id="ib" style="width: 60px; height: 100px;">Inline block 60x100px</span>
+       	 <span id="ib" style="width: 100px; height: 100px;">Inline block 100x100px</span>
+       	 <span id="ib">Inline block, shirina i visota ne zadani.</span>	
+       </div>
+
+       <h2>Znachenie 'table-*'</h2>
+       <style>
+       	#table {
+            border: 2px solid black;
+            font-size: 2rem;
+       	}
+
+       	#table>div>div {
+       		border: 1px solid black;
+       		padding: 5px 10px;
+       		text-align: center;
+       	}
+       </style>
+       <div id="table" style="display: table;">
+       	<div style="display: table-row;">
+       		<div style="display: table-cell;">table</div>
+       		<div style="display: table-cell;">{display: table}</div>
+       	</div>
+       	<div style="display: table-row;">
+       		<div style="display: table-cell;">tr</div>
+       		<div style="display: table-cell;">{display: table-row}</div>
+       	</div>
+       	<div style="display: table-row;">
+       		<div style="display: table-cell;">td, th.</div>
+       		<div style="display: table-cell;">{display: table-cell}</div>
+       	</div>
+       </div>
+
+       <h2>Znachenia 'list-item' and 'run-in'</h2>
+       <p>'<b>list-item</b>' - po umolchaniu ispolzuetsia dlia elementov spiska.</p>
+       <div style="display: list-item; list-style: inside square;">
+       	Punkt 1
+       </div>
+       
+       <h2>Znachenie 'flex'</h2>
+       <ul>
+       	<li>flex-direction: napravlenie elementov vnutri flex-konteinera (column/row/column-reverse/row-reverse)</li>
+       	<li>justify-content: viravnivanie elementov po glavnomu napravleniu (flex-start/flex-end/center/space-evenly/space-between/space-around)</li>
+       	<li>align-items: viravnivanie elementov po vtorostepennomu napravleniu (flex-start/flex-end/center/stretch/baseline)</li>
+       </ul>
+	</main>
+	
+	<footer>
+		<p align="center">Yura4887</p>
+	</footer>
+
+</body>
+</html>
