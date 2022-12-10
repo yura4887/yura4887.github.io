@@ -1,0 +1,23 @@
+	@media screen and (max-width: 768px) {
+		.imglink {
+			width: 100vw;
+			height: calc(100vw / 16*9);
+			margin: 3px 0;	
+		}
+
+		main {
+			width: 100vw;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.imglink:hover {
+	        transform: scale(0.7) rotate(15deg) translate(-100px, -10px); 
+	        border: 3px solid black;
+	    }
+
+	    .imglink {
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+	    }
+	}
